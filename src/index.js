@@ -4,9 +4,9 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import ApolloClient from "apollo-boost";
-var os = require("os");
 
-var graphqlEndpoint = "http://" + os.hostname() + ":7777/query";
+var graphqlEndpoint =
+  "http://freebookbackend-439040221.eu-west-1.elb.amazonaws.com:7777/query";
 
 const client = new ApolloClient({
   uri: graphqlEndpoint
